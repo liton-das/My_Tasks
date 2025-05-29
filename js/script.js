@@ -36,12 +36,53 @@ change_color_btn.addEventListener('click',()=>{
 let Task_2_text=document.querySelector('.Task_2_text');
 let completeBtn=document.querySelector('.completeBtn');
 
-
-// Task Two Example end-------------------------//
-// Task Three Example start-------------------------//
 completeBtn.addEventListener('click',()=>{
     Task_2_text.style='color:green';
     Task_2_text.innerHTML='Task 2 Completed';
+})
+
+// Task Two Example end-------------------------//
+// ------------------Task Three Example-------------------------//
+// Brake the tasks into individual sections and implement them one by one.
+// ----------------------------------------------- O -------------------------------------------
+// Task 3: Change <div> Background Color Using Buttons
+// Create a <div> with:
+// Width: 400px
+// Height: 400px
+// Initial background color: black
+// Below the <div>, add 4 buttons with these background colors:
+// Yellow
+// Green
+// Pink
+// Purple
+// When the user clicks on any button:
+// The background color of the <div> should change to match the button’s color.
+// Clicking the yellow button → <div> becomes yellow
+// Clicking the green button → <div> becomes green
+// Clicking the pink button → <div> becomes pink
+// Clicking the purple button → <div> becomes purple
+// ----------------------------------------------- O -------------------------------------------
+// Task Three Example start-------------------------//
+let task_3=document.querySelector('.task_3')
+let task_three_complete=document.querySelector('.task_three_complete');
+let btn_yellow=document.querySelector('.btn_yellow');
+let btn_green=document.querySelector('.btn_green');
+let btn_pink=document.querySelector('.btn_pink');
+let btn_purple=document.querySelector('.btn_purple');
+
+btn_yellow.addEventListener('click',()=>{
+  task_3.style='background-color:yellow'; 
+})
+btn_green.addEventListener('click',()=>{
+  task_3.style='background-color:green'; 
+})
+btn_pink.addEventListener('click',()=>{
+  task_3.style='background-color:pink'; 
+})
+btn_purple.addEventListener('click',()=>{
+  task_3.style='background-color:purple';
+  task_three_complete.innerHTML='Task 3 Completed';
+  task_three_complete.style='color:green;padding:20px';
 })
 
 // Task Three Example end-------------------------//
