@@ -1,3 +1,4 @@
+/* ---------------- common css start  ------------------ */
 *{
     margin:0;
     padding: 0;
@@ -12,11 +13,13 @@ a{
     display: inline-block;
     text-decoration: none;
 }
-.content{
+.content,.common{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+/* ---------------- common css end  ------------------ */
+/* ------------- Task One start ------------- */
 .change_color{
     color: #fff;
     background-color: rgba(13, 13, 170, 0.878);
@@ -25,3 +28,16 @@ a{
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
+/* ------------- Task One end ------------- */
+/* ------------- Task Two start ------------- */
+.completeBtn{
+    color: #fff;
+    background-color:rgb(36, 161, 161);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+/* ------------- Task Two end ------------- */
