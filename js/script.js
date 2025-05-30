@@ -69,7 +69,6 @@ let btn_yellow=document.querySelector('.btn_yellow');
 let btn_green=document.querySelector('.btn_green');
 let btn_pink=document.querySelector('.btn_pink');
 let btn_purple=document.querySelector('.btn_purple');
-
 btn_yellow.addEventListener('click',()=>{
   task_3.style='background-color:yellow'; 
 })
@@ -80,10 +79,9 @@ btn_pink.addEventListener('click',()=>{
   task_3.style='background-color:pink'; 
 })
 btn_purple.addEventListener('click',()=>{
-    task_three_complete.innerHTML='Task 3 Completed';
     task_3.style='background-color:purple';
     task_three_complete.style='color:green;padding:20px';
-
+    task_three_complete.innerHTML='Task 3 Completed';
 })
 // Task Three Example end-------------------------//
 // Task Four Example start-------------------------//
@@ -103,8 +101,20 @@ sub.addEventListener('click',()=>{
 })
 // Task Four Example end-------------------------//
 // Task Five Example start-------------------------//
-
-
+let inp=document.querySelector('.inp');
+let result=document.querySelector('.result');
+let form_btn=document.querySelector('.form_btn');
+let err=document.querySelector('.err');
+form_btn.addEventListener('click',()=>{
+    if(inp.value==''){
+        err.innerHTML='Name field is required';
+        err.style='color:red';
+    }else{
+        err.innerHTML='';
+        result.innerHTML=`User Name: ${inp.value}`;
+        result.style='color:green';
+    }
+})
 // Task Five Example end-------------------------//
 // Task Six Example start-------------------------//
 
