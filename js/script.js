@@ -80,15 +80,27 @@ btn_pink.addEventListener('click',()=>{
   task_3.style='background-color:pink'; 
 })
 btn_purple.addEventListener('click',()=>{
-  task_3.style='background-color:purple';
-  task_three_complete.innerHTML='Task 3 Completed';
-  task_three_complete.style='color:green;padding:20px';
-})
+    task_three_complete.innerHTML='Task 3 Completed';
+    task_3.style='background-color:purple';
+    task_three_complete.style='color:green;padding:20px';
 
+})
 // Task Three Example end-------------------------//
 // Task Four Example start-------------------------//
-
-
+let quantity=document.querySelector('.quantity');
+let sum=document.querySelector('.sum');
+let sub=document.querySelector('.sub');
+let inc=1;
+sum.addEventListener('click',()=>{
+    quantity.innerHTML=`${inc++}`;
+})
+sub.addEventListener('click',()=>{
+    if(inc ==0){
+        alert('You cannot decrease the quantity below 0');
+    }else{
+        quantity.innerHTML=`${inc--}`;
+    }
+})
 // Task Four Example end-------------------------//
 // Task Five Example start-------------------------//
 

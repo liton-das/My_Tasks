@@ -71,8 +71,29 @@ a{
 }
 /* ------------- Task Three end ------------- */
 /* ------------- Task Four start ------------- */
-
-
+.task_four{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.task_four_text{
+    padding: 30px ;
+}
+.sum,.sub{
+    width: 30px;
+    height: 20px;
+    background: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /* ------------- Task Four end ------------- */
 /* ------------- Task Five start ------------- */
 
