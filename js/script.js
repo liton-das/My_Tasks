@@ -117,8 +117,40 @@ form_btn.addEventListener('click',()=>{
 })
 // Task Five Example end-------------------------//
 // Task Six Example start-------------------------//
-
-
+let inp_value=document.querySelector('.inp_value');
+let submit_btn=document.querySelector('.form_btn2')
+let err2=document.querySelector('.error')
+let show_result=document.querySelector('.show_result');
+let result2=document.querySelector('.result2');
+let red=document.querySelector('.red');
+let blue=document.querySelector('.blue');
+let green=document.querySelector('.green');
+submit_btn.addEventListener('click',()=>{
+    if(inp_value.value==''){
+        err2.innerHTML='Input field is required';
+        err2.style='color:red';
+        submit_btn.innerHTML='Try Again';
+    }else{
+        err2.innerHTML='';
+        submit_btn.innerHTML='Submitted';
+    }
+})
+show_result.addEventListener('click',()=>{
+    result2.innerHTML=inp_value.value;
+    show_result.style='background:green;color:#fff'
+})
+red.addEventListener('click',()=>{
+    result2.style='color:red;background:green';
+    red.style='background:red;color:blue';
+})
+blue.addEventListener('click',()=>{
+    result2.style='color:blue;background:red';
+    blue.style='background:blue;color:red';
+})
+green.addEventListener('click',()=>{
+    result2.style='color:green;background:blue';
+    green.style='background:green;color:blue';
+})
 // Task Six Example end
 
 
