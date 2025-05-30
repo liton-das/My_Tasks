@@ -140,15 +140,15 @@ show_result.addEventListener('click',()=>{
     show_result.style='background:green;color:#fff'
 })
 red.addEventListener('click',()=>{
-    result2.style='color:red;background:green';
+    result2.style='color:green;background:red';
     red.style='background:red;color:blue';
 })
 blue.addEventListener('click',()=>{
-    result2.style='color:blue;background:red';
+    result2.style='color:red;background:blue';
     blue.style='background:blue;color:red';
 })
 green.addEventListener('click',()=>{
-    result2.style='color:green;background:blue';
+    result2.style='color:blue;background:green';
     green.style='background:green;color:blue';
 })
 // Task Six Example end
