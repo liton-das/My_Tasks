@@ -130,9 +130,11 @@ submit_btn.addEventListener('click',()=>{
         err2.innerHTML='Input field is required';
         err2.style='color:red';
         submit_btn.innerHTML='Try Again';
+        submit_btn.style='background:red';
     }else{
         err2.innerHTML='';
         submit_btn.innerHTML='Submitted';
+        submit_btn.style='background:green';
     }
 })
 show_result.addEventListener('click',()=>{
