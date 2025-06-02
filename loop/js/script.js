@@ -1,4 +1,5 @@
 // select the dom element
+let form_bg = document.querySelector('.form_bg');
 let my_inp= document.querySelector('.my_inp');
 let my_btn= document.querySelector('.my_btn');
 let label_text= document.querySelector('.label_text');
@@ -55,6 +56,7 @@ red.addEventListener("click", () => {
     dark.style.backgroundColor = "#000"
     green.disabled = false; // Enable the green button
   }
+form_bg.style.backgroundColor = "lightcoral";
   green.style.backgroundColor = "green";
   result.style.backgroundColor = "lightpink";
   user_color.style.backgroundColor = "red";
@@ -73,6 +75,7 @@ green.addEventListener('click',()=>{
         dark.disabled=false
         dark.style.backgroundColor = "#000"
     }
+    form_bg.style.backgroundColor = "lightgreen";
     result.style.color = "green";
     result.style.backgroundColor = "lightgreen";
     user_color.style.backgroundColor = "green";
@@ -90,6 +93,7 @@ blue.addEventListener('click',()=>{
         blue.disabled = true; // Disable the blue button
         blue.style.backgroundColor = "grey";
     }
+    form_bg.style.backgroundColor = "lightblue";
     result.style.color = "blue";
     result.style.backgroundColor = "lightblue";
     user_color.style.backgroundColor = "blue";
@@ -107,6 +111,8 @@ dark.addEventListener('click',()=>{
         dark.disabled = true
         dark.style.backgroundColor = 'gray'
     }
+    form_bg.style.backgroundColor = "#000";
+    form_bg.style.color = "#fff";
     result.style.color = "#fff";
     result.style.backgroundColor = "#000";
     user_color.style.backgroundColor = "#000";
